@@ -1,34 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    {{ $t('message') }}
-    <button @click="handleLangSwitch">
-      CHANGE
-    </button>
+    <Header />
+    <FirstVideoSection />
   </div>
 </template>
 
 <script>
+  import Header from './components/Header.vue';
+  import FirstVideoSection from './components/FirstVideoSection.vue';
 
-export default {
-  name: 'app',
-  components: {
-  },
-  methods: {
-    handleLangSwitch () {
-      this.$i18n.locale = 'fr'
+  export default {
+    name: 'app',
+    components: {
+      Header,
+      FirstVideoSection,
     },
+    methods: {
+      handleLangSwitch () {
+        this.$i18n.locale = 'fr'
+      },
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  #app {
+    margin: 0;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
 </style>
