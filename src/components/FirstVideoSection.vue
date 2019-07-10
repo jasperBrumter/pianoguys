@@ -1,17 +1,16 @@
 <template>
-  <div class="video_container container">
-  	<div class="fullscreen_video_wrap">
-  		<video src="../assets/pianowires.mp4" autoplay loop="true"></video>
-  	</div>
-  	<div class="video_overlay">
-  	</div>
-  	<div class="video_overlay_text">
-  		<h1>Piano Guys</h1>
-      <p>The complete solution to all your piano needs.<br>Based in Montreal, Canada.</p>
-  	</div>
-  </div>
+	<div class="video_container container">
+		<div class="fullscreen_video_wrap">
+			<video src="../assets/pianowires.mp4" autoplay="true" loop="true"></video>
+		</div>
+		<div class="video_overlay">
+		</div>
+		<div class="video_overlay_text">
+			<h1>Piano Guys</h1>
+			<p>The complete solution to all your piano needs.<br>Based in Montreal, Canada.</p>
+		</div>
+	</div>
 </template>
-
 <script>
 
 export default {
