@@ -7,7 +7,6 @@
 
 <script>
   // components
-  import Header from './components/Header.vue';
   import FirstVideoSection from './components/FirstVideoSection.vue';
   import Modal from './components/Modal.vue';
 
