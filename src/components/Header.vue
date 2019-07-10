@@ -27,5 +27,7 @@ export default {
 
 #logoImage {
 	height: 90%;
+	z-index: 1000;
+	position: absolute;
 }
 </style>
