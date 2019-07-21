@@ -2,6 +2,8 @@
   <div id="app">
     <Modal />
     <RotatingBackgrounds />
+    <Section2 />
+    <Section3 />
   </div>
 </template>
 
@@ -10,6 +12,8 @@
   import FirstVideoSection from './components/FirstVideoSection.vue';
   import RotatingBackgrounds from './components/RotatingBackgrounds.vue';
   import Modal from './components/Modal.vue';
+  import Section2 from './components/Section2.vue';
+  import Section3 from './components/Section3.vue';
 
   export default {
     name: 'app',
@@ -17,17 +21,16 @@
       FirstVideoSection,
       RotatingBackgrounds,
       Modal,
+      Section2,
+      Section3,
     },
-    methods: {
-      handleLangSwitch () {
-        this.$i18n.locale = 'fr'
-      },
-    }
   }
 </script>
 
 <style>
-
+  body {
+    margin: 0
+  }
   #app {
     margin: 0;
     font-family: 'Playfair Display', serif;
@@ -49,4 +52,11 @@
     font-weight: lighter;
     letter-spacing: 2px;
   }
+  .container {
+  max-width: 960px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
 </style>

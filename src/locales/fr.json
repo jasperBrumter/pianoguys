@@ -7,5 +7,31 @@
 		"subtitle1": "L'excellence en restauration de pianos",
 		"subtitle2": "Base a Montreal",
 		"image_alt_text": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
+	},
+	"section2": {
+		"subtitle1": "Comment le faisons-nous?",
+		"title1": "EXPERTISE & EXPERIENCE",
+		"field1": "Restoration",
+		"field2": "Sur Mesure",
+		"field3": "Technologie"
+	},
+	"section3": {
+		"title1": "Suivez la restoration d'un piano",
+		"field1": {
+			"title": "Table d'Harmonie",
+			"subtitle": "L'amplificateur"
+		},
+		"field2": {
+			"title": "Cadre Metallique",
+			"subtitle": "The amplifier"
+		},
+		"field3": {
+			"title": "Cordes et Acoustiques",
+			"subtitle": "The amplifier"
+		},
+		"field4": {
+			"title": "Ajustements Finaux",
+			"subtitle": "The amplifier"
+		}
 	}
 }

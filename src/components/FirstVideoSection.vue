@@ -29,14 +29,6 @@ export default {
   color: white;
 }
 
-.container {
-  max-width: 960px;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin: auto;
-  text-align: center;
-}
-
 .fullscreen_video_wrap {
   position: absolute;
   top: 0;

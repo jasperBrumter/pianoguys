@@ -1,8 +1,37 @@
 {
+	"meta": {
+		"description": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
+	},
 	"section1": {
 		"title1": "PIANO GUYS",
 		"subtitle1": "The complete solution to all your piano needs.",
 		"subtitle2": "Based in Montreal, Canada",
 		"image_alt_text": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
+	},
+	"section2": {
+		"subtitle1": "How we do it?",
+		"title1": "EXPERTISE & EXPERIENCE",
+		"field1": "Restoration",
+		"field2": "Custom-Made Parts",
+		"field3": "Technology"
+	},
+	"section3": {
+		"title1": "Follow our restoration process",
+		"field1": {
+			"title": "Soundboard",
+			"subtitle": "The amplifier"
+		},
+		"field2": {
+			"title": "Cast-Iron Frame",
+			"subtitle": "The amplifier"
+		},
+		"field3": {
+			"title": "Chords and Acoustics",
+			"subtitle": "The amplifier"
+		},
+		"field4": {
+			"title": "Final adjustments",
+			"subtitle": "The amplifier"
+		}
 	}
 }

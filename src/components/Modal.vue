@@ -151,14 +151,14 @@
 		flex-direction: column;
 	}
 	.logoImage {
-		position: absolute;
+		position: fixed;
 		z-index: 99;
 		left: 20px;
 		top: 20px;
 		max-height: 15vh;
 	}
 	.toggleButton {
-		position: absolute;
+		position: fixed;
 		z-index: 99;
 		right: 20px;
 		top: 20px;
