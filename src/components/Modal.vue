@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<img alt="Piano Guys logo" src="../assets/logo.png" class="logoImage">
-		<button class="toggle" @click="toggle"></button>
+		<div class="toggleButton" @click="toggle"></div>
 		<div 
 		@v-if="!isModalOpen"
 		id='modalContainer'
@@ -12,6 +12,7 @@
 		border-radius: ${this.border}%;
 		`"
 		>
+
 			<button 
 				v-for="navigationLink in buttons"
               	:key="navigationLink.name"
@@ -51,11 +52,16 @@
 	  ),
 		methods: {
 			toggle () {
-				if (!this.isModalOpen) {
-					this.transitionPhase1()
+				if (this.$i18n.locale === 'fr') {
+					this.$i18n.locale = 'en'
 				} else {
-					this.transitionOut()
+					this.$i18n.locale = 'fr'
 				}
+				// if (!this.isModalOpen) {
+				// 	this.transitionPhase1()
+				// } else {
+				// 	this.transitionOut()
+				// }
 			},
 			showButtons () {
 				let x = 0;
@@ -84,6 +90,8 @@
 					this.height += this.desiredSpeed(this.height);
 					this.width += this.desiredSpeed(this.height);
 					if (this.height > 100) {
+						this.height = 100
+						this.width = 100
 						clearInterval(increase)
 						this.transitionPhase2()
 					}
@@ -135,7 +143,7 @@
 		right: 0;
 		top: 0;
 		z-index: 20;
-		background-color: rgb(20,20,100);
+		background-color: rgba(103,82,23,1);
 		border-radius: 0 0 0 30%;
 		display: flex;
 		align-items: center;
@@ -149,10 +157,25 @@
 		top: 20px;
 		max-height: 15vh;
 	}
-	.toggle {
+	.toggleButton {
 		position: absolute;
 		z-index: 99;
 		right: 20px;
 		top: 20px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 4px solid rgba(230,198,62,1);
+		background-image: url('../assets/PianoMenu.png');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+	.toggleButton:hover {
+		background-color: rgba(230,198,62,1);
+	}
+	.toggleButton:hover img{
+		transform: rotate(90deg);
 	}
 </style>

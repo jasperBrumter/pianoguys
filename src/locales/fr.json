@@ -1,3 +1,11 @@
 {
-  "message": "Bonjour Monde !!"
+	"meta": {
+		"description": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
+	},
+	"section1": {
+		"title1": "PIANO GUYS",
+		"subtitle1": "L'excellence en restauration de pianos",
+		"subtitle2": "Base a Montreal",
+		"image_alt_text": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
+	}
 }

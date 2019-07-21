@@ -1,3 +1,8 @@
 {
-  "message": "hello i18n !!"
+	"section1": {
+		"title1": "PIANO GUYS",
+		"subtitle1": "The complete solution to all your piano needs.",
+		"subtitle2": "Based in Montreal, Canada",
+		"image_alt_text": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
+	}
 }
