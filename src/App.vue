@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Modal />
-    <CSSRotatingBackgrounds />
-    <Section2 />
-    <Restoration />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -22,6 +20,9 @@
       Section2,
       Restoration,
     },
+    mounted () {
+      console.log(this.$route)
+    }
   }
 </script>
 

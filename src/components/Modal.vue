@@ -12,7 +12,6 @@
 		border-radius: ${this.border}%;
 		`"
 		>
-
 			<button 
 				v-for="navigationLink in buttons"
               	:key="navigationLink.name"
@@ -52,16 +51,16 @@
 	  ),
 		methods: {
 			toggle () {
-				if (this.$i18n.locale === 'fr') {
-					this.$i18n.locale = 'en'
-				} else {
-					this.$i18n.locale = 'fr'
-				}
-				// if (!this.isModalOpen) {
-				// 	this.transitionPhase1()
+				// if (this.$i18n.locale === 'fr') {
+				// 	this.$i18n.locale = 'en'
 				// } else {
-				// 	this.transitionOut()
+				// 	this.$i18n.locale = 'fr'
 				// }
+				if (!this.isModalOpen) {
+					this.transitionPhase1()
+				} else {
+					this.transitionOut()
+				}
 			},
 			showButtons () {
 				let x = 0;
