@@ -1,28 +1,26 @@
 <template>
   <div id="app">
     <Modal />
-    <RotatingBackgrounds />
+    <CSSRotatingBackgrounds />
     <Section2 />
-    <Section3 />
+    <Restoration />
   </div>
 </template>
 
 <script>
   // components
-  import FirstVideoSection from './components/FirstVideoSection.vue';
-  import RotatingBackgrounds from './components/RotatingBackgrounds.vue';
+  import CSSRotatingBackgrounds from './components/CSSRotatingBackgrounds.vue';
   import Modal from './components/Modal.vue';
   import Section2 from './components/Section2.vue';
-  import Section3 from './components/Section3.vue';
+  import Restoration from './components/Restoration.vue';
 
   export default {
     name: 'app',
     components: {
-      FirstVideoSection,
-      RotatingBackgrounds,
+      CSSRotatingBackgrounds,
       Modal,
       Section2,
-      Section3,
+      Restoration,
     },
   }
 </script>

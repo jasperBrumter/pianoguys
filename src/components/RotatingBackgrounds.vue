@@ -63,7 +63,7 @@ export default {
     },
     getImgSource () {
       const pic = `background${this.selectedBackground}.jpg`
-      return require('../assets/'+pic)
+      return require('../assets/section2/'+pic)
     }
   }
 }

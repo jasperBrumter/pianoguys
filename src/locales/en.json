@@ -11,27 +11,21 @@
 	"section2": {
 		"subtitle1": "How we do it?",
 		"title1": "EXPERTISE & EXPERIENCE",
-		"field1": "Restoration",
-		"field2": "Custom-Made Parts",
-		"field3": "Technology"
+		"field1": "The Case",
+		"subfield1": "Lid, legs, pedal lyre, music rack, lid prop, hinges, etc. This is what you see when you look at the piano. It is the furniture part of the piano.",
+		"field2": "The Belly",
+		"subfield2": "The soundboard, bridges, strings, plate/harp, tuning pins, belly board, etc. The Belly is the part that is responsible for giving the piano the ability to make the sound that a piano produces.",
+		"field3": "The Piano “Action”",
+		"subfield3": "The action is the connecting device between the player and the piano. You push down the key, at the far end of the key is the damper lever, which is now lifted off the string, then a series of devices send the hammer upwards striking the string and making a sound. The damper then shuts down the sound when the key is released."
 	},
-	"section3": {
-		"title1": "Follow our restoration process",
-		"field1": {
-			"title": "Soundboard",
-			"subtitle": "The amplifier"
-		},
-		"field2": {
-			"title": "Cast-Iron Frame",
-			"subtitle": "The amplifier"
-		},
-		"field3": {
-			"title": "Chords and Acoustics",
-			"subtitle": "The amplifier"
-		},
-		"field4": {
-			"title": "Final adjustments",
-			"subtitle": "The amplifier"
-		}
+	"restoration": {
+		"subtitle1": "Follow the restoration of a Steinway Piano",
+		"title1": "1925 Steinway Model B (6’10.5”)",
+		"subfield1": "experienced rebuilders prefer to repair rather than replace a soundboard whenever it is deemed feasable to do so",
+		"subfield2": "Abyss piano has extensive experience with soundboard and bridge replacement and is fully equiped to replace soundboards and bridges",
+		"subfield3": "The soundboard is pressed up from underneath, the ribs are reglued. Shims made from soundboard material are used to fill the routed grooves.",
+		"subfield4": "The bridges are renotched, graphited and repinned; the soundboard is stripped, sanded, bleached and finish coats are applied.",
+		"subfield5": "The piano Plate or “Harp”  is sanded and cleaned.",
+		"subfield6": "then re-gilded with a metallic, bronze powder finish"
 	}
 }
