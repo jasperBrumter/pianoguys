@@ -39,26 +39,47 @@ export default {
       {
         'subtitle': 'subfield1',
         'image': 'background1.jpg',
+        'alt': 'alt-text1',
       },
       {
         'subtitle': 'subfield2',
         'image': 'background2.jpg',
+        'alt': 'alt-text2',
       },
       {
         'subtitle': 'subfield3',
         'image': 'background3.jpg',
+        'alt': 'alt-text3',
       },
       {
         'subtitle': 'subfield4',
         'image': 'background4.jpg',
+        'alt': 'alt-text4',
       },
       {
         'subtitle': 'subfield5',
         'image': 'background5.jpg',
+        'alt': 'alt-text5',
       },
       {
         'subtitle': 'subfield6',
         'image': 'background6.jpg',
+        'alt': 'alt-text6',
+      },
+      {
+        'subtitle': 'subfield7',
+        'image': 'background7.jpg',
+        'alt': 'alt-text7',
+      },
+      {
+        'subtitle': 'subfield8',
+        'image': 'background8.jpg',
+        'alt': 'alt-text8',
+      },
+      {
+        'subtitle': 'subfield9',
+        'image': 'background9.jpg',
+        'alt': 'alt-text9',
       }
     ]
   }),
