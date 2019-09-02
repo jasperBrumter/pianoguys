@@ -1,7 +1,10 @@
 <template>
 	<div>
 		<img alt="Piano Guys logo" src="../assets/logo.png" class="logoImage">
-		<div class="toggleButton" @click="toggle"></div>
+		<div class="right">
+			Contact
+			<div class="toggleButton" @click="toggle"></div>
+		</div>
 		<div 
 		@v-if="!isModalOpen"
 		id='modalContainer'
@@ -157,11 +160,16 @@
 		top: 20px;
 		max-height: 15vh;
 	}
-	.toggleButton {
+	.right {
 		position: fixed;
 		z-index: 99;
 		right: 20px;
 		top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.toggleButton {
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;

@@ -4,7 +4,7 @@
 	},
 	"section1": {
 		"title1": "PIANO GUYS",
-		"subtitle1": "The complete solution to all your piano needs.",
+		"subtitle1": "The Piano Restoration Experts",
 		"subtitle2": "Based in Montreal, Canada",
 		"image_alt_text": "Les Piano Guys mettent en oeuvre l'excellence dans le domaine du piano, et leur reconstruction en etat d'origine"
 	},
@@ -21,11 +21,21 @@
 	"restoration": {
 		"subtitle1": "Follow the restoration of a Steinway Piano",
 		"title1": "1925 Steinway Model B (6’10.5”)",
-		"subfield1": "experienced rebuilders prefer to repair rather than replace a soundboard whenever it is deemed feasable to do so",
-		"subfield2": "Abyss piano has extensive experience with soundboard and bridge replacement and is fully equiped to replace soundboards and bridges",
-		"subfield3": "The soundboard is pressed up from underneath, the ribs are reglued. Shims made from soundboard material are used to fill the routed grooves.",
-		"subfield4": "The bridges are renotched, graphited and repinned; the soundboard is stripped, sanded, bleached and finish coats are applied.",
-		"subfield5": "The piano Plate or “Harp”  is sanded and cleaned.",
-		"subfield6": "then re-gilded with a metallic, bronze powder finish"
+		"subfield1": "Our master piano artisans have extensive experience in repairing soundboards and bridges. The soundboard is pressed up from underneath, the ribs are reglued. Shims made from soundboard material are used to fill the routed grooves.",
+		"subfield2": "The bridges are renotched, graphited and repinned; the soundboard is stripped, sanded, bleached and finish coats are applied.",
+		"subfield3": "",
+		"subfield4": "The piano Plate or “Harp”  is sanded and cleaned.",
+		"subfield5": "then re-gilded with a metallic, bronze powder finish",
+		"subfield6": "",
+		"subfield7": "",
+		"subfield8": "",
+		"subfield9": "",
+		"subfield10": ""
+	},
+	"contact": {
+		"quote": "Rebuilding pianos is not just a job, It’s a calling; a time honored craft performed by artisans who really know and care about pianos. A piano is not just a piece of furniture, but rather an instrument capable of reacting to a player’s emotions, technique and creativity. Three pianos of the same make, size and close in years can sound as different as night and day. They can be dark and mysterious or rich and singing.",
+		"email": "email@email.ca",
+		"address": "Montreal, QC",
+		"phone": "555-555-5555"
 	}
 }

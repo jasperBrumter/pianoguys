@@ -4,6 +4,7 @@
     <CSSRotatingBackgrounds />
     <Section2 />
     <Restoration />
+    <Contact />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
   import Modal from './components/Modal.vue';
   import Section2 from './components/Section2.vue';
   import Restoration from './components/Restoration.vue';
+  import Contact from './components/Contact.vue';
 
   export default {
     name: 'app',
@@ -21,6 +23,7 @@
       Modal,
       Section2,
       Restoration,
+      Contact,
     },
   }
 </script>
