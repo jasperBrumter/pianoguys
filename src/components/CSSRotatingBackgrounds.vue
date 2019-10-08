@@ -13,7 +13,11 @@
 		<div class="image_overlay_text">
 			<h1>{{ $t('section1.title1') }}</h1>
 			<h2>{{ $t('section1.subtitle1')}}</h2>
+      <div class="cta" @click="scrollDown">
+        {{ $t('section1.discover')}}
+      </div>
 		</div>
+    <div class="curve"></div>
 	</div>
 </template>
 <script>
@@ -51,6 +55,13 @@ export default {
     getImgSource () {
       const pic = `background/background_picture_${this.selectedBackground}.jpg`
       return require('../assets/'+pic)
+    },
+    scrollDown () {
+      const height = "innerHeight" in window 
+               ? window.innerHeight
+               : document.documentElement.offsetHeight; 
+      console.log(height)
+      window.scrollTo(0, height)
     }
   }
 }
@@ -73,6 +84,25 @@ color: rgba(230,198,62,1);
 background-color: rgba(20,20,20,1);
 }
 
+.curve {
+  position: absolute;
+  bottom: -100px;
+  right: -200px;
+  width: 250%;
+  height: 160px;
+  z-index: 9;
+  border-radius: 100%;
+  background-color: #dbdfd7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23b6ab1c' fill-opacity='0.21'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  border: 4px solid rgba(100,50,22,1);
+}
+
+@media only screen and (max-width: 600px) {
+  .curve {
+    height: 150px;
+  }
+}
+
 .background-image {
 	position: absolute;
 	  display: block;
@@ -81,7 +111,16 @@ background-color: rgba(20,20,20,1);
 	  width: auto;
 	  height: auto;
 }
-
+.cta {
+  width: 250px;
+  height: 60px;
+  border-radius: 5px;
+  border: 2px solid rgba(100,50,22,1);
+  margin: 30px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .background-image-mobile {
 		position: absolute;
 	  display: block;

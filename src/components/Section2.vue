@@ -79,7 +79,7 @@ export default {
   }
   .titleContainer {
     width: 95%;
-    margin: 0 auto;
+    margin: 2px auto 0 auto;
     margin-top: 50px;
     max-width: 900px;
     border: 2px solid rgba(180,160,67,1);

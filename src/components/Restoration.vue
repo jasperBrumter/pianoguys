@@ -1,34 +1,43 @@
 <template>
-	<div class="restoration">
-    <div class="container">
-      <div class="titleContainer">
-        <div class="bordered">
-          <h3>
-            {{ $t('restoration.subtitle1')}}
-          </h3>
-          <h1>
-            {{ $t('restoration.title1')}}
-          </h1>
-        </div>
-      </div>
-      <div class="fields">
-        <div v-for="(field, index) of fields" :key="field.title"
-        :class="{
-          'field': true,
-          'reverse': index % 2 ===0
-        }">
-          <div class="fieldTextContainer">
+  <div>
+  	<div class="restoration">
+      <div class="container">
+        <div class="titleContainer">
+          <div class="bordered">
             <h3>
-              {{ $t(`restoration.${field.subtitle}`)}}
+              {{ $t('restoration.main.subtitle')}}
             </h3>
-          </div>
-          <div class="fieldImageContainer">
-            <img :src="getImgSource(field.image)"></img>
+            <h1>
+              {{ $t('restoration.main.title')}}
+            </h1>
           </div>
         </div>
-      </div>
+        <div class="fields">
+          <div v-for="(field, index) of fields" :key="index"
+          :class="{
+            'field': true,
+            'reverse': index % 2 ===0
+          }">
+            <div class="fieldTextContainer">
+              <h3>
+                {{ $t(`restoration.image${index + 1}.description`)}}
+              </h3>
+            </div>
+            <div class="fieldImageContainer">
+              <img :src="getImgSource(field.image)"
+                :alt="$t(`restoration.image${index + 1}.alt-text`)"
+                :title="$t(`restoration.image${index + 1}.tooltip`)"></img>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <div class="curve-top"></div>
+  	</div>
+    <div class="transition"
+      :style="{ backgroundImage: 'url(' + 'http://1.bp.blogspot.com/-8PfnHfgrH4I/TylX2v8pTMI/AAAAAAAAJJ4/TICBoSEI57o/s1600/search_by_image_image.png' + ')' }">
+      <div class="curve-bottom"></div>
     </div>
-	</div>
+  </div>
 </template>
 <script>
 
@@ -36,56 +45,16 @@ export default {
   name: 'Restoration',
   data: () => ({
     fields: [
-      {
-        'subtitle': 'subfield1',
-        'image': 'background1.jpg',
-        'alt': 'alt-text1',
-      },
-      {
-        'subtitle': 'subfield2',
-        'image': 'background2.jpg',
-        'alt': 'alt-text2',
-      },
-      {
-        'subtitle': 'subfield3',
-        'image': 'background3.jpg',
-        'alt': 'alt-text3',
-      },
-      {
-        'subtitle': 'subfield4',
-        'image': 'background4.jpg',
-        'alt': 'alt-text4',
-      },
-      {
-        'subtitle': 'subfield5',
-        'image': 'background5.jpg',
-        'alt': 'alt-text5',
-      },
-      {
-        'subtitle': 'subfield6',
-        'image': 'background6.jpg',
-        'alt': 'alt-text6',
-      },
-      {
-        'subtitle': 'subfield7',
-        'image': 'background7.jpg',
-        'alt': 'alt-text7',
-      },
-      {
-        'subtitle': 'subfield8',
-        'image': 'background8.jpg',
-        'alt': 'alt-text8',
-      },
-      {
-        'subtitle': 'subfield9',
-        'image': 'background9.jpg',
-        'alt': 'alt-text9',
-      },
-      {
-        'subtitle': 'subfield10',
-        'image': 'background10.jpg',
-        'alt': 'alt-text10',
-      },
+      { 'image': 'background1.jpg' },
+      { 'image': 'background2.jpg' },
+      { 'image': 'background3.jpg' },
+      { 'image': 'background4.jpg' },
+      { 'image': 'background5.jpg' },
+      { 'image': 'background6.jpg' },
+      { 'image': 'background7.jpg' },
+      { 'image': 'background8.jpg' },
+      { 'image': 'background9.jpg' },
+      { 'image': 'background10.jpg' },
     ]
   }),
   methods: {
@@ -104,11 +73,46 @@ export default {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23b6ab1c' fill-opacity='0.21'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
     color: rgba(160,140,47,1);
     padding: 4rem 0;
+    position: relative;
   }
+
+  .transition {
+    width: 100%;
+    height: 700px;
+    z-index: 8;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .curve-top, .curve-bottom {
+    position: absolute;
+    right: -200px;
+    width: 250%;
+    height: 160px;
+    z-index: 9;
+    border-radius: 100%;
+    background-color: #dbdfd7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23b6ab1c' fill-opacity='0.21'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    bottom: -100px;
+  }
+  .curve-top {
+    border-bottom: 4px solid rgba(100,50,22,1);
+  }
+  .curve-bottom {
+    border-top: 4px solid rgba(100,50,22,1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .curve-top, .curve-bottom {
+      height: 150px;
+    }
+  }
+
+
   .titleContainer {
     width: 95%;
     margin: 0 auto;
-    margin-top: 50px;
     max-width: 900px;
     border: 2px solid rgba(180,160,67,1);
     border-radius: 2px;

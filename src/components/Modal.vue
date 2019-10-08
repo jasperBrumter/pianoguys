@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<img alt="Piano Guys logo" src="../assets/logo.png" class="logoImage">
+		<div ref="navbar" class="navbar">
+		</div>
+		<img alt="Piano Guys logo, a grand piano with gold letters." src="../assets/logo.png" ref="logo" class="logoImage">
 		<div class="right">
 			Contact
 			<div class="toggleButton" @click="toggle"></div>
@@ -53,6 +55,17 @@
 		    isModalOpen: false,
 	    }
 	  ),
+		mounted () {
+			document.addEventListener("scroll", () => {
+				if (window.scrollY > 50) {
+					this.$refs.logo.classList.add('reduced');
+					this.$refs.navbar.classList.add('showing');
+				} else {
+					this.$refs.logo.classList.remove('reduced');
+					this.$refs.navbar.classList.remove('showing');
+				}
+			});
+		},
 		methods: {
 			toggle () {
 				if (this.$i18n.locale === 'fr') {
@@ -128,7 +141,33 @@
 	}
 </script>
 
-<style>
+<style scoped>
+	.navbar {
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+		top: 0px;
+		opacity: 0;
+		height: 0px;
+		background-color: #dbdfd7;
+		background-color: #dbdfd7;
+  		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23b6ab1c' fill-opacity='0.21'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  		border-bottom: 4px solid rgba(100,50,22,1);
+		transition: .4s ease;
+	}
+	
+	.showing {
+		height: 60px;
+		opacity: 1;
+		transition: .7s ease;
+	}
+	.key {
+		top: 0px;
+		height: 35px;
+		color: black;
+		width: 5px;
+		margin: 0px 2px;
+	}
 	.modalContainer {
 		overflow: hidden;
 	}
@@ -159,7 +198,13 @@
 		left: 20px;
 		top: 20px;
 		max-height: 15vh;
+		transition: max-height .7s ease;
 	}
+	.reduced {
+		max-height: 12vh;
+		transition: max-height .4s ease;
+	}
+
 	.right {
 		position: fixed;
 		z-index: 99;

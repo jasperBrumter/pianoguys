@@ -2,8 +2,8 @@
   <div id="app">
     <Modal />
     <CSSRotatingBackgrounds />
-    <Section2 />
     <Restoration />
+    <Section2 />
     <Contact />
   </div>
 </template>
@@ -31,6 +31,9 @@
 <style>
   body {
     margin: 0
+  }
+  html {
+    scroll-behavior: smooth;
   }
   #app {
     margin: 0;
