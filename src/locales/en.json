@@ -15,65 +15,66 @@
 		"field1": "The Case",
 		"subfield1": "Lid, legs, pedal lyre, music rack, lid prop, hinges, etc. This is what you see when you look at the piano. It is the furniture part of the piano.",
 		"field2": "The Belly",
-		"subfield2": "The soundboard, bridges, strings, plate/harp, tuning pins, belly board, etc. The Belly is the part that is responsible for giving the piano the ability to make the sound that a piano produces.",
+		"subfield2": "The Belly consists of the soundboard, bridges, strings, plate/harp, tuning pins, and pin-block. It is the part that is responsible generating sound and producing amplification.",
 		"field3": "The Piano “Action”",
-		"subfield3": "The action is the connecting device between the player and the piano. You push down the key, at the far end of the key is the damper lever, which is now lifted off the string, then a series of devices send the hammer upwards striking the string and making a sound. The damper then shuts down the sound when the key is released."
+		"subfield3": "The action is the connecting device between the player and the piano. You push down the key, the far end of the key lifts the damper lever off the string. Simultaneously a series of devices send the hammer upwards striking the string and making a sound. The damper then shuts down the sound when the key is released. There are many parts involved"
 	},
 	"restoration": {
 		"main": {
 			"subtitle": "Follow the restoration of a Steinway Piano",
-			"title": "1925 Steinway Model B (6’10.5”)"
+			"title": "1917 Steinway Model A3 (6’4”)"
 		},
 		"image1": {
-			"description": "Our master piano artisans have extensive experience in repairing soundboards and bridges. The soundboard is pressed up from underneath, the ribs are reglued. Shims made from soundboard material are used to fill the routed grooves.",
+			"description": "This is an extreme example of soundboard repair. All cracks have been repaired with soundboard material salvaged from pianos of the same era.",
 			"alt-text": "Master piano artisans prepare to repair a grand piano soundboard.",
 			"tooltip": "The soundboard of a Steinway grand piano"
 		},
 		"image2": {
-			"description": "The bridges are renotched, graphited and repinned; the soundboard is stripped, sanded, bleached and finish coats are applied.",
+			"description": "Soundboard and bridge repairs are complete. The bridges are re-notched, graphited and re-pinned; the soundboard has been stripped and sanded.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image3": {
-			"description": "",
+			"description": "Next, a dry transfer decal is burnished to the soundboard and finish coats are applied.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image4": {
-			"description": "",
+			"description": "The plate is sanded and decontaminated in preparation for re-guilding.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image5": {
-			"description": "",
+			"description": "A mixture of bronze powders and shellac are applied, followed by high gloss nitrocellulose lacquer clear coats.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image6": {
-			"description": "",
+			"description": "Many hours are spent painting the black lettering on the casting.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image7": {
-			"description": "",
+			"description": "The plate is reset with meticulous attention to string down-bearing tolerances.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image8": {
-			"description": "",
+			"description": "All plate bolts and screws are polished and the harp is dressed with new felt before the stringing process begins.",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image9": {
-			"description": "",
+			"description": "The tenor and treble registers are strung first...",
 			"alt-text": "",
 			"tooltip": ""
 		},
 		"image10": {
-			"description": "",
+			"description": "... followed by bass strings, dampers, and listing cloth.",
 			"alt-text": "",
 			"tooltip": ""
-		}
+		},
+		"calltoaction": "THere are many other steps involved in this process. More information is available."
 	},
 	"contact": {
 		"quote": "Rebuilding pianos is not just a job, It’s a calling; a time honored craft performed by artisans who really know and care about pianos. A piano is not just a piece of furniture, but rather an instrument capable of reacting to a player’s emotions, technique and creativity. Three pianos of the same make, size and close in years can sound as different as night and day. They can be dark and mysterious or rich and singing.",
