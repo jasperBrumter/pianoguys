@@ -196,11 +196,11 @@
 		z-index: 99;
 		left: 20px;
 		top: 20px;
-		max-height: 15vh;
+		max-height: 120px;
 		transition: max-height .7s ease;
 	}
 	.reduced {
-		max-height: 12vh;
+		max-height: 80px;
 		transition: max-height .4s ease;
 	}
 

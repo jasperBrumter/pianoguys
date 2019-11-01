@@ -30,7 +30,7 @@
 
 <style>
   body {
-    margin: 0
+    margin: 0;
   }
   html {
     scroll-behavior: smooth;

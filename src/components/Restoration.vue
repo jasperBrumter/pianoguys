@@ -74,6 +74,7 @@ export default {
     color: rgba(160,140,47,1);
     padding: 4rem 0;
     position: relative;
+    overflow: hidden;
   }
 
   .transition {
