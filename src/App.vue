@@ -2,9 +2,9 @@
   <div id="app">
     <Modal />
     <CSSRotatingBackgrounds />
-    <Restoration />
+ <!--    <Restoration />
     <Section2 />
-    <Contact />
+    <Contact /> -->
   </div>
 </template>
 

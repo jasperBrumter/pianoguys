@@ -51,7 +51,6 @@ export default {
       const height = "innerHeight" in window 
                ? window.innerHeight
                : document.documentElement.offsetHeight; 
-      console.log(height)
       window.scrollTo(0, height)
     }
   }
