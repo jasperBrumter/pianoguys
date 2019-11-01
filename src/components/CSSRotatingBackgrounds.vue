@@ -1,6 +1,6 @@
 <template>
   	<div class="image_container">
-      <!-- <img :class="{ 
+      <img :class="{ 
       	'background-image-mobile': false,
       	'background-image': true,
       	'animate-image-left': startAnimation,
@@ -16,8 +16,8 @@
       <div class="cta" @click="scrollDown">
         {{ $t('section1.discover')}}
       </div>
-		</div> -->
-    <!-- <div class="curve"></div> -->
+		</div>
+    <div class="curve"></div>
 	</div>
 </template>
 <script>
@@ -62,6 +62,7 @@ export default {
 	box-sizing: border-box;
 }
 .image_container {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
