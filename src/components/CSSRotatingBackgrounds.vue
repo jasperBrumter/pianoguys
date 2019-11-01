@@ -1,6 +1,6 @@
 <template>
   	<div class="image_container">
-      <img :class="{ 
+     <!--  <img :class="{ 
       	'background-image-mobile': false,
       	'background-image': true,
       	'animate-image-left': startAnimation,
@@ -17,7 +17,7 @@
         {{ $t('section1.discover')}}
       </div>
 		</div>
-    <div class="curve"></div>
+    <div class="curve"></div> -->
 	</div>
 </template>
 <script>
@@ -30,7 +30,7 @@ export default {
     startAnimation: true,
   }),
   mounted () {
-    this.changeBackground()
+    this.changeBackground();
   },
   computed: {
   	isMobile () {
@@ -77,11 +77,11 @@ export default {
   height: 100vh;
   display: flex;
   align-items: center;
-overflow: hidden;
-z-index: 0;
-justify-content: center;
-color: rgba(230,198,62,1);
-background-color: rgba(20,20,20,1);
+  overflow: hidden;
+  z-index: 0;
+  justify-content: center;
+  color: rgba(230,198,62,1);
+  background-color: blue;
 }
 
 .curve {
