@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style scoped>
-  .restoration {
+  .restoration { 
     min-height: 100vh;
     width: 100vw;
     background-color: #000;

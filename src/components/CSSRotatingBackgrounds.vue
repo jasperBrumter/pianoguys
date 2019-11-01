@@ -1,6 +1,6 @@
 <template>
   	<div class="image_container">
-     <!--  <img :class="{ 
+      <!-- <img :class="{ 
       	'background-image-mobile': false,
       	'background-image': true,
       	'animate-image-left': startAnimation,
@@ -16,8 +16,8 @@
       <div class="cta" @click="scrollDown">
         {{ $t('section1.discover')}}
       </div>
-		</div>
-    <div class="curve"></div> -->
+		</div> -->
+    <!-- <div class="curve"></div> -->
 	</div>
 </template>
 <script>
@@ -31,15 +31,6 @@ export default {
   }),
   mounted () {
     this.changeBackground();
-  },
-  computed: {
-  	isMobile () {
-  		 if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-  	     return true;
-  	   } else {
-  	     return false;
-  	   }
-  	}
   },
   methods: {
     changeBackground () {
@@ -72,12 +63,12 @@ export default {
 	box-sizing: border-box;
 }
 .image_container {
+  height: 100vh;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   overflow: hidden;
-  z-index: 0;
+  z-index: 200;
   justify-content: center;
   color: rgba(230,198,62,1);
   background-color: blue;
